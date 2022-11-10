@@ -1,0 +1,330 @@
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Montserrar', sans-serif;
+  overflow-x: hidden;
+  background-color: #4A291B;
+  color: white;
+}
+
+header {
+  height: 100%;
+  background-image: url(/imgs/soo.jpg);
+  filter: brightness(0.5);
+  background-size: cover;
+}
+
+nav {
+  background-color: rgba(165, 42, 42, 0);
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#list {
+  margin-right: -166px;
+  margin-top: 20px;
+}
+
+li {
+  display: inline;
+  margin: 20px;
+
+}
+
+ul li a {
+  text-decoration: none;
+  color: white
+}
+
+#logo {
+  height: 149px;
+  width: 138px;
+  margin-top: -84px;
+  margin-left: -111px;
+}
+
+h1 {
+  margin-left: -10%;
+  margin-top: -20%;
+  width: 179.38px;
+  height: 36.69px;
+
+}
+
+#but1 {
+
+  width: 367.77px;
+  height: 104.06px;
+  margin-top: -2%;
+  margin-left: 35%;
+  text-align: center;
+  color: #EF4F0B;
+  background: #EFDAC9;
+  font-weight: 600;
+  font-size: 32px;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  justify-items: center;
+}
+
+/*-p--*/
+header p {
+
+  margin-top: 20%;
+  margin-bottom: 2;
+  height: 48.91px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  line-height: 72px;
+  text-align: center;
+  color: #FFFFFF;
+
+
+}
+
+header h2 {
+  margin-top: 0%;
+  height: 48.91px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/*-----section(figure)----------*/
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+figure {
+
+  position: relative;
+}
+
+figcaption {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 10%;
+  background-color: #f6b99e55;
+}
+
+/*-----2(slide)----------*/
+.wrapper {
+  display: flex;
+  justify-content: center;
+  animation: bar 5s ease infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bar {
+  0% {
+    margin-left: 0px;
+  }
+
+  40% {
+    margin-left: calc(-728px * 2);
+  }
+
+  60% {
+    margin-left: calc(-728px * 2.3);
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+figure img:hover {
+  transform: translateZ(20px);
+}
+
+figure:hover {
+  animation-play-state: paused;
+}
+
+figure img {
+  transition: transform 0.6s;
+  min-width: 264px;
+  height: 200px;
+}
+
+.slide-track {
+  perspective: 100px;
+
+}
+
+/*-----why us avantages----------*/
+.avantage {
+  display: flex;
+}
+
+
+
+
+
+/* ======================================================= Saad's Area ======================================================= */
+
+
+
+h2, h3 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+/* Article - Timeline */
+
+article h2, article p, article h3 {
+  margin: 5% 10% 5% 10%;
+}
+article {
+  border-top: 2px solid #d9d9d9c3;
+  border-bottom: 2px solid #d9d9d9c3;
+}
+.times {
+  font-size: 28px;
+  font-weight: 600;
+}
+article img {
+  float: left;
+}
+
+/* Opinions */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Get in touch with us */
+
+form {
+  margin-top: 15%;
+  padding-top: 2%;
+  border-top: 2px solid #d9d9d9c3;
+}
+#email {
+  width: 70%;
+  height: 5%;
+  background-color: white;
+  border: none;
+  padding-left: 10px;
+  border-radius: 5px;
+  display: block;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1%;
+}
+#button {
+  height: 5%;
+  width: 70%;
+  border-radius: 5px;
+  display: block;
+  align-items: center;
+  margin: auto;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #EFDAC9;
+  color: black;
+  margin-top: 5%;
+}
+.fa-brands, .fa-solid {
+  font-size: 28px;
+  margin-right: 15px;
+}
+.fa-brands:hover, .fa-solid:hover {
+  color: #4A291B;
+  transition: 1s ease-out;
+  font-size: 30px;
+}
